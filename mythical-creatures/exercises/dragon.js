@@ -11,10 +11,11 @@ class Dragon {
   }
 
   eat() {
+    this.meal = this.meal + 1
     if (this.meal === 3) {
       this.hungry = false
       }
-      
+
     }
 
   }
