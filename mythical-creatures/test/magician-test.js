@@ -16,7 +16,7 @@ describe('Magician', function() {
     assert.equal(magician2.name, 'The Great Casey');
   });
 
-  it.skip('should be able to have an assistant', function () {
+  it('should be able to have an assistant', function () {
     var magician1 = new Magician({ name: 'Scott', assistant: true });
     var magician2 = new Magician({ name: 'Casey', assistant: false });
 
@@ -27,19 +27,19 @@ describe('Magician', function() {
     assert.equal(magician2.assistant, false);
   });
 
-  it.skip('should prefer wearing a top hat', function() {
+  it('should prefer wearing a top hat', function() {
     var magician = new Magician({ name: 'Scott' });
 
     assert.equal(magician.favoriteAccessory, 'top hat');
   });
 
-  it.skip('should be able to have a different favorite accessory', function() {
+  it('should be able to have a different favorite accessory', function() {
     var magician = new Magician({ name: 'Casey', clothing: 'cape' });
 
     assert.equal(magician.favoriteAccessory, 'cape')
   });
 
-  it.skip('should be able to perform an incantation', function() {
+  it('should be able to perform an incantation', function() {
     var magician = new Magician({ name: 'Scott' });
 
     var spell = magician.performIncantation('abracadabra');
@@ -49,7 +49,7 @@ describe('Magician', function() {
     assert.equal(charm, 'ALLAKAZAAM!');
   });
 
-  it.skip('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
+  it('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
     var magician1 = new Magician({ name: 'Hannah' });
     var magician2 = new Magician({ name: 'Kayla', clothing: 'top hat' });
 
