@@ -8,11 +8,5 @@ class Medusa {
   }
 }
 
-console.log('person', Person)
-class Person {
-  constructor() {
-
-  }
-}
 
 module.exports = Medusa;
