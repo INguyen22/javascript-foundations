@@ -6,6 +6,9 @@ class Medusa {
     this.name = name
     this.statues = []
   }
+  gazeAtVictim() {
+    this.statues +=  
+  }
 }
 
 
