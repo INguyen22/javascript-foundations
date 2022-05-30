@@ -22,12 +22,13 @@ class Fairy {
   becomeProvoked() {
     this.disposition = 'Vengeful'
   }
-  replaceInfant(firstInfant) {
-    firstInfant.disposition = 'Malicious'
+  replaceInfant(firstInfant, newFirstInfant) {
     var newFirstInfant = firstInfant
-    newFirstInfant = firstInfant
-    //when the fairy replaces the baby
-    //the new baby should be like the first baby but malicious
+    newFirstInfant.disposition = 'Malicious'
+    this.humanWards.push(firstInfant)
+    this.disposition = 'Good natured'
+    return newFirstInfant
+
   }
 }
 

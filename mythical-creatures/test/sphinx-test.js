@@ -1,4 +1,3 @@
-const assert = require('chai').assert;
 const Sphinx = require('../exercises/sphinx');
 
 describe('Sphinx', () => {
