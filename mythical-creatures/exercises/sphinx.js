@@ -12,7 +12,6 @@ class Sphinx {
     }
   }
   attemptAnswer(answer) {
-    console.log('answer', answer)
     for (var i = 0; i < this.riddles.length; i++) {
     if (this.riddles[i].answer.includes(answer)) {
       this.riddles.splice(i, 1)
