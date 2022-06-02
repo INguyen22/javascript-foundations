@@ -14,11 +14,12 @@ class Sphinx {
     for (var i = 0; i < this.riddles.length; i++) {
     if (this.riddles[i].answer.includes(answer)) {
       this.riddles.splice(i, 1)
-      //console.log('riddles', this.riddles)
       return 'That wasn\'t that hard, I bet you don\'t get the next one'
       }
+      //console.log('eaten', this.heroesEaten)
+      //console.log('riddles', this.riddles)
+      else this.heroesEaten ++
     }
-    this.heroesEaten ++
   }
 }
 
