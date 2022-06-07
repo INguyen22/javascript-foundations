@@ -4,7 +4,9 @@ class SkatePark{
     this.yearFounded = skateparkDetails.year
     this.style = skateparkDetails.type
     this.features = skateparkDetails.features
-    this.isPrivate = true
+    this.isPrivate = skateparkDetails.isPrivate || false
+    this.cost = skateparkDetails.price || 0
+    this.occupants = []
   }
 }
 

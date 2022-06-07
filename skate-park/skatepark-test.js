@@ -72,7 +72,7 @@ describe('Skate Park', function() {
     assert.equal(skatePark2.isPrivate, true);
   })
 
-  it.skip('should defaut to being free', function() {
+  it('should defaut to being free', function() {
     var skatePark1 = new SkatePark({
       name: 'Louisville Extreme Park',
       year: 2002,
@@ -93,7 +93,7 @@ describe('Skate Park', function() {
     assert.equal(skatePark2.cost, 12)
   });
 
-  it.skip('should be able to keep track of its occupants', function() {
+  it('should be able to keep track of its occupants', function() {
     var skatePark = new SkatePark({
       name: 'Major Taylor',
       year: 1999,
@@ -233,7 +233,7 @@ describe('Skate Park', function() {
 })
 
 describe('Skater', function() {
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var skater = new Skater({name: 'Scott'});
     var skater2 = new Skater({name: 'Nora'})
 
